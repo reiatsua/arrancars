@@ -23,6 +23,8 @@ class TeamInfo(models.Model):
         verbose_name="Логотип команды"
     )
 
+    creator = models.URLField(blank=True)
+
     def __str__(self):
         return self.name
 

@@ -23,7 +23,12 @@
         <h2>🏆 Цель</h2>
         <p>{{ team.goal }}</p>
     </div>
-
+    <div class="section">
+        <h2>👤 Страница создателя этого сайта</h2>
+        <a href="{{ team.creator }}" target="_blank" class="btn btn-dark btn-lg">
+            <i class="bi bi-github"></i> Автор сайта
+        </a>
+    </div>
 </div>
 {% else %}
     <p>Информация о команде пока не добавлена.</p>
