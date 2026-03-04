@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn arrancars_team.wsgi
+web: python manage.py migrate && gunicorn config.wsgi
