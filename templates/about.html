@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
-{load static %}
+{% load static %}
+
+{% block content %}
+
 {% if team %}
 <div class="glass-card">
 
     {% if team.logo %}
-        <img src="{{ team.logo.url }}" class="team-logo">
+        <img src="{{ team.logo.url }}" class="team-logo" align="center">
     {% endif %}
 
     <h1 class="title">{{ team.name }}</h1>
@@ -22,4 +25,8 @@
     </div>
 
 </div>
+{% else %}
+    <p>Информация о команде пока не добавлена.</p>
 {% endif %}
+
+{% endblock %}
