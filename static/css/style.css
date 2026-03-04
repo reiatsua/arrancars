@@ -1,0 +1,88 @@
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #ddd;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* BACKGROUND */
+.background {
+    min-height: 100vh;
+    padding-top: 100px;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("../img/arrancars-bg.png") center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTENT */
+.content-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px;
+}
+
+/* GLASS CARD */
+.glass-card {
+    background: rgba(180, 180, 180, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+
+/* TEXT */
+.title {
+    font-size: 42px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.text {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    border-left: 4px solid #fff;
+    padding-left: 12px;
+}

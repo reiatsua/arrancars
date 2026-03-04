@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2>Состав команды</h2>
+<div class="grid">
+{% for p in players %}
+    <div class="card">
+        <h3>{{ p.nickname }}</h3>
+        <span>{{ p.role }}</span>
+        <p>{{ p.description }}</p>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

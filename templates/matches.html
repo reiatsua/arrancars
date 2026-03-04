@@ -1,0 +1,10 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2>Матчи</h2>
+<ul class="matches">
+{% for m in matches %}
+    <li>{{ m.date }} — {{ m.opponent }} : {{ m.result }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
